@@ -422,3 +422,37 @@ a {
     font-size: 1.7rem;
   }
 }
+
+/* Media */
+.media {
+  background-color: black;
+  display: flex;
+}
+
+.media__image {
+  fill: var(--color-primary);
+}
+
+.media__body {
+  margin-left: 2.7rem;
+}
+
+.media__title {
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.media__content {
+  color: #7b858b;
+  margin: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .media__header {
+    font-size: 1.8rem;
+  }
+}

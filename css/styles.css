@@ -645,7 +645,7 @@ a {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
 .collapsible__header {
@@ -707,4 +707,80 @@ a {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+/* Navigation bars */
+.nav {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.nav__brand {
+  transform: translateY(5px);
+}
+
+.nav__toggler {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: box-shadow 0.15s;
+}
+
+.nav__toggler:hover {
+  opacity: 1;
+}
+
+.nav.collapsible--expanded .nav__toggler {
+  border-radius: 5px;
+  box-shadow: 0 0 4px 2px white;
+  opacity: 1;
+}
+
+.collapsible--expanded .nav__list {
+  margin-bottom: 1rem;
+}
+
+.nav__list {
+  width: 100%;
+  margin: 0;
+  transition: all 0.3s;
+}
+
+.nav__item {
+  border-bottom: 1px solid #222;
+  padding: 0.5rem 2rem;
+}
+
+.nav__item > a {
+  color: #d2d0db;
+  transition: color 0.3s;
+}
+
+.nav__item > a:hover {
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__list {
+    display: flex;
+    font-size: 1.6rem;
+    max-height: 100vh;
+    opacity: 1;
+    width: auto;
+  }
+
+  .collapsible--expanded .nav__list {
+    margin: 0;
+  }
+
+  .nav__item {
+    border: 0;
+  }
+
+  .nav__toggler {
+    display: none;
+  }
 }

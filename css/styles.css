@@ -808,3 +808,27 @@ a {
     align-self: center;
   }
 }
+
+/* Domain */
+.block-domain .input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  margin: 4rem auto;
+  max-width: 670px;
+}
+
+.block-domain__prices {
+  display: grid;
+  font-size: 2rem;
+  font-weight: 600;
+  grid-template: repeat(2, 6rem) / repeat(3, 1fr);
+  justify-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    grid-template: 1fr / repeat(auto-fit, minmax(10rem, 1fr));
+  }
+}

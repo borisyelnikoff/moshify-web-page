@@ -832,3 +832,41 @@ a {
     grid-template: 1fr / repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
+
+/* Feature content*/
+.grid.feature {
+  gap: 4rem 2rem;
+  margin: 12rem 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid.feature:first-of-type {
+  margin-top: 6rem;
+}
+
+.feature__content {
+  padding: 0 2rem;
+}
+
+.feature__heading {
+  margin: 1rem 0;
+}
+
+.feature__description {
+  letter-spacing: 0.5px;
+}
+
+.feature__image-container {
+  margin: 0 auto;
+}
+
+.feature__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .grid.feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
+}

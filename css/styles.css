@@ -76,6 +76,7 @@ p {
 /* Links */
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 .link-arrow {
@@ -144,6 +145,7 @@ a {
 .list {
   list-style: none;
   padding-left: 0;
+  margin: 0;
 }
 
 .list--inline .list__item {
@@ -902,5 +904,70 @@ a {
   .block-showcase__image > img {
     max-width: 700px;
     width: auto;
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: #232323;
+  font-size: 2rem;
+}
+
+.footer__sections {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__heading {
+  font-size: inherit;
+  text-transform: uppercase;
+}
+
+.footer__section {
+  border-bottom: 1px solid #393939;
+  margin: 1.5rem 2rem 0;
+  padding-bottom: 1rem;
+}
+
+.footer a:hover {
+  transition: color 0.3s;
+  color: white;
+}
+
+.footer .list__item {
+  line-height: 2rem;
+  padding: 1rem 0;
+}
+
+.footer__brand {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__sections {
+    flex-direction: row;
+    font-size: 1.6rem;
+    justify-content: space-between;
+  }
+
+  .footer__section {
+    border: none;
+  }
+
+  .footer .collapsible__content {
+    max-height: 100%;
+    opacity: 1;
+    display: block;
+  }
+
+  .footer__brand {
+    order: -1;
+    margin: 0;
+    text-align: start;
+  }
+
+  .footer .collapsible__chevron {
+    display: none;
   }
 }

@@ -216,7 +216,7 @@ a {
   font-weight: 600;
   line-height: 2rem;
   margin: 1rem 0;
-  padding: 2rem 3rem;
+  padding: 2rem 1vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -276,7 +276,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: 5rem;
+  min-width: 15rem;
 }
 
 .btn--search::before {
@@ -292,15 +292,25 @@ a {
   padding-right: 6rem;
 }
 
+@media screen and (min-width: 475px) {
+  .btn {
+    padding: 2rem 4vw;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.5rem;
+  }
+
+  .btn--search {
+    padding-right: 5rem;
+    padding-left: 3rem;
   }
 }
 
 /* Inputs */
 .input {
-  max-width: 100%;
   border-radius: var(--border-radius);
   border: 1px solid var(--color-border);
   color: var(--color-headings);
@@ -315,10 +325,9 @@ a {
 }
 
 .input-group {
+  display: inline-block;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
   border-radius: var(--border-radius);
   border: 1px solid var(--color-border);
   overflow: hidden;
@@ -327,24 +336,33 @@ a {
 .input-group .input {
   text-align: center;
   border-width: 0;
-  margin: 0.5rem 1rem 0 1rem;
-  padding: 1.5rem 1rem;
+  margin: 0;
+  padding: 1.5rem 0.5rem;
+  width: 45vw;
 }
 
 .input-group .btn {
   margin: 4px;
 }
 
-@media screen and (min-width: 768px) {
-  .input-group {
-    flex-direction: row;
-    justify-content: flex-end;
+@media screen and (min-width: 375px) {
+  .input-group .input {
+    width: 52vw;
   }
+}
 
+@media screen and (min-width: 425px) {
+  .input-group .input {
+    width: 58vw;
+  }
+}
+
+@media screen and (min-width: 475px) {
   .input-group .input {
     display: inline-block;
     flex-grow: 1;
-    margin-top: 0;
+    padding: 1.5rem 0;
+    width: auto;
   }
 }
 
@@ -354,7 +372,7 @@ a {
   }
 }
 
-/*  */
+/* Cards */
 .card {
   border-radius: 7px;
   box-shadow: 0 0 20px 10px #f3f3f3;
@@ -684,7 +702,7 @@ a {
 /* Blocks */
 .block {
   --padding-vertical: 6rem;
-  padding: var(--padding-vertical) 2rem;
+  padding: var(--padding-vertical) 1rem;
 }
 
 .block--dark {
@@ -720,6 +738,12 @@ a {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .block {
+    padding: var(--padding-vertical) 2rem;
+  }
 }
 
 /* Navigation bars */
@@ -830,13 +854,20 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
   font-size: 2rem;
   font-weight: 600;
-  grid-template: repeat(2, 6rem) / repeat(3, 1fr);
+  grid-template: repeat(2, 6rem) / repeat(2, 1fr);
   justify-items: center;
   max-width: 700px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 414px) {
+  .block-domain__prices {
+    grid-template: repeat(2, 6rem) / repeat(3, 1fr);
+  }
 }
 
 @media screen and (min-width: 768px) {

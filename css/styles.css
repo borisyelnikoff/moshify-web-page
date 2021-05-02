@@ -401,6 +401,10 @@ a {
   background-color: #02cdf1;
 }
 
+.card--lengthen {
+  height: 100%;
+}
+
 .card__header,
 .card__body {
   padding: 2rem 3rem;
@@ -451,6 +455,15 @@ a {
   width: 40px;
 }
 
+.block.plans-container {
+  gap: 6rem;
+  padding: 6rem 4rem;
+}
+
+.plans-container .plan {
+  transition: all 0.5s;
+}
+
 @media screen and (min-width: 1024px) {
   .plan__name {
     font-size: 1.4rem;
@@ -466,6 +479,10 @@ a {
 
   .plan__description {
     font-size: 1.7rem;
+  }
+
+  .plans-container .plan:hover {
+    transform: scale(1.1);
   }
 }
 
@@ -579,6 +596,10 @@ a {
 }
 
 /* Testimonials */
+.block.testimonials-section {
+  padding-bottom: 0rem;
+}
+
 .testimonial {
   padding: 2rem;
   justify-content: left;
@@ -623,6 +644,11 @@ a {
 }
 
 /* Callouts */
+.container.callout-container {
+  transform: translateY(30%);
+  max-width: 1000px;
+}
+
 .callout {
   border-radius: 5px;
   padding: 3rem 2rem;
@@ -649,6 +675,10 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .container.callout-container {
+    transform: translateY(60%);
+  }
+
   .callout {
     padding: 6rem 4rem;
   }
@@ -942,6 +972,7 @@ a {
 .footer {
   background-color: #232323;
   font-size: 2rem;
+  padding-top: 24rem;
 }
 
 .footer__sections {

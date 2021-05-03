@@ -33,6 +33,11 @@ body {
   line-height: 1.5;
 }
 
+body[data-aos-duration="1000"] [data-aos],
+[data-aos][data-aos][data-aos-duration="1000"] {
+  transition-duration: 1000ms;
+}
+
 h1,
 h2,
 h3 {

@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Deploy Your website in less than 60 seconds." />
+    <meta
+      name="description"
+      content="Deploy Your website in less than 60 seconds."
+    />
     <meta property="og:title" content="Moshify..." />
     <meta property="og:description" content="Moshify..." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="http://..." />
     <meta property="og:url" content="https://moshified.com" />
-    <meta>
     <title>Moshify - Go online for just 9$</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -39,8 +41,8 @@
       </nav>
     </header>
     <section class="block block--dark block--skewed-left hero">
-      <div class="container grid grid--1x2"  data-aos="fade-right">
-        <header class="block__header hero__content">
+      <div class="container grid grid--1x2">
+        <header class="block__header hero__content" data-aos="fade-right">
           <h1 class="block__heading">Cloud Hosting for Pros</h1>
           <p class="hero__tagline">
             Deploy your websites in less than 60 seconds
@@ -306,12 +308,12 @@
       <div class="grid grid--1x2 container block-showcase__content">
         <picture class="block-showcase__image" data-aos="fade-right">
           <source
-            type="mage/webp"
-            srcset="images/ipad.webp 1x images/ipad@2x.webp 2x"
+            type="image/webp"
+            srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"
           />
           <source
-            type="mage/png"
-            srcset="images/ipad.png 1x images/ipad@2x.png 2x"
+            type="image/png"
+            srcset="images/ipad.png 1x, images/ipad@2x.png 2x"
           />
           <img
             src="images/ipad@2x.png"
@@ -425,12 +427,14 @@
             <div class="callout__content">
               <h2 class="callout__heading">Ready To Get Started?</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus non
-                assumenda nulla, eaque sed excepturi alias magnam sapiente consequuntur
-                repudiandae.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellendus non assumenda nulla, eaque sed excepturi alias
+                magnam sapiente consequuntur repudiandae.
               </p>
             </div>
-            <a href="#" class="btn btn--secondary btn--stretched">Get started</a>
+            <a href="#" class="btn btn--secondary btn--stretched"
+              >Get started</a
+            >
           </div>
         </div>
       </div>
@@ -438,12 +442,12 @@
     <footer class="block block--dark footer">
       <div class="container footer__sections">
         <section class="collapsible footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">Products</h2>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="images/icons.svg#chevron" />
             </svg>
-          </header>
+          </div>
           <ul class="list collapsible__content">
             <li class="list__item"><a href="#">WordPress Hosting</a></li>
             <li class="list__item"><a href="#">Free Automated WordPress</a></li>
@@ -453,12 +457,12 @@
           </ul>
         </section>
         <section class="collapsible footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">Company</h2>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="images/icons.svg#chevron" />
             </svg>
-          </header>
+          </div>
           <ul class="list collapsible__content">
             <li class="list__item"><a href="#">About</a></li>
             <li class="list__item"><a href="#">Affiliates</a></li>
@@ -470,12 +474,12 @@
           </ul>
         </section>
         <section class="collapsible footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">Support</h2>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="images/icons.svg#chevron" />
             </svg>
-          </header>
+          </div>
           <ul class="list collapsible__content">
             <li class="list__item"><a href="#">Contact</a></li>
             <li class="list__item"><a href="#">Knowdlege Base</a></li>
@@ -486,12 +490,12 @@
           </ul>
         </section>
         <section class="collapsible footer__section">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">Domains</h2>
             <svg class="icon icon--white collapsible__chevron">
               <use xlink:href="images/icons.svg#chevron" />
             </svg>
-          </header>
+          </div>
           <ul class="list collapsible__content">
             <li class="list__item"><a href="#">Domain Checker</a></li>
             <li class="list__item"><a href="#">Domain Transfer</a></li>
@@ -500,10 +504,10 @@
             <li class="list__item"><a href="#">Cheap SSL Certificate</a></li>
           </ul>
         </section>
-        <section class="footer__brand">
+        <div class="footer__brand">
           <a href="/"><img src="images/logo.svg" alt="page logo" /></a>
-          <p>Copyright &#169 2020 mosh</p>
-        </section>
+          <p>Copyright &#169; 2020 mosh</p>
+        </div>
       </div>
     </footer>
     <script src="js/main.js"></script>

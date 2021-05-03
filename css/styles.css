@@ -33,9 +33,9 @@ body {
   line-height: 1.5;
 }
 
-body[data-aos-duration="1000"] [data-aos],
-[data-aos][data-aos][data-aos-duration="1000"] {
-  transition-duration: 1000ms;
+body[data-aos],
+[data-aos][data-aos] {
+  transition-duration: 500ms;
 }
 
 h1,
@@ -136,13 +136,13 @@ a {
   padding: 0.5rem 1.5rem;
 }
 
-@media screen and (min-wdith: 1024px) {
+@media screen and (min-width: 1024px) {
   .badge {
     font-size: 1.5rem;
   }
 
   .badge--small {
-    font-size: 1.2 rem;
+    font-size: 1.2rem;
   }
 }
 
